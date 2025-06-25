@@ -23,9 +23,10 @@ def union(parent, rank, x, y):
     else:
         parent[rootY] = rootX
         rank[rootX] += 1
-
+    # parent = [find(parent, i) for i in range(n)]
     return True
 
+n = 5
 parent, rank = initialize(5)
 
 print(parent)

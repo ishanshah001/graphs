@@ -18,7 +18,7 @@ def findRedundantConnection(edges):
         else:
             parent[rootY] = rootX
             rank[rootX] += 1
-
+        # parent = [find(parent, i) for i in range(len(edges)+1)]
         return []
 
     parent = list(range(len(edges)+1))
